@@ -24,6 +24,9 @@ public class PrivateMessageTest  {
         Player player1 = Mockito.mock(Player.class);
         Player player2 = Mockito.mock(Player.class);
 
+        Mockito.when(player1.isOnline()).thenReturn(true);
+        Mockito.when(player2.isOnline()).thenReturn(true);
+
         Mockito.when(player1.getName()).thenReturn("Player1");
         Mockito.when(player2.getName()).thenReturn("Player2");
 
@@ -52,6 +55,10 @@ public class PrivateMessageTest  {
         Player player1 = Mockito.mock(Player.class);
         Player player2 = Mockito.mock(Player.class);
         Player player3 = Mockito.mock(Player.class);
+
+        Mockito.when(player1.isOnline()).thenReturn(true);
+        Mockito.when(player2.isOnline()).thenReturn(true);
+        Mockito.when(player3.isOnline()).thenReturn(true);
 
         Mockito.when(player1.getName()).thenReturn("Player1");
         Mockito.when(player2.getName()).thenReturn("Player2");

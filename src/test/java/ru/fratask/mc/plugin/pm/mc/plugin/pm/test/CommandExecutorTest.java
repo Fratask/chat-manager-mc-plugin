@@ -29,6 +29,9 @@ public class CommandExecutorTest {
 
         int counter = 0;
 
+        Mockito.when(player1.isOnline()).thenReturn(true);
+        Mockito.when(player2.isOnline()).thenReturn(true);
+
         Mockito.when(player1.getName()).thenReturn("Player1");
         Mockito.when(player2.getName()).thenReturn("Player2");
 
@@ -59,6 +62,9 @@ public class CommandExecutorTest {
         commandContextForReply.putArg("message", "Some reply message");
 
         int counter = 0;
+
+        Mockito.when(player1.isOnline()).thenReturn(true);
+        Mockito.when(player2.isOnline()).thenReturn(true);
 
         Mockito.when(player1.getName()).thenReturn("Player1");
         Mockito.when(player2.getName()).thenReturn("Player2");

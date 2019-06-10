@@ -22,6 +22,8 @@ public class PmService implements IPmService {
     public void sendMessage(Player from, Player to, String message) {
         if (from.getName().equals(to.getName())){
             from.sendMessage(Text.of(TextColors.RED, "You must choose player!"));
+        } else if (!to.isOnline()) {
+            from.sendMessage(Text.of(TextColors.RED, "You must choose online player!"));
         } else {
             privateMessagesTraceHashMap.put(to, from);
             from.sendMessage(Text.of(TextColors.DARK_RED, from.getName() + ": ", TextColors.DARK_PURPLE, message));
