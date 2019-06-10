@@ -1,0 +1,11 @@
+[
+    {
+        "modid": "chat-manager",
+        "dependencies": [
+            "spongeapi@7.1.0"
+        ],
+        "requiredMods": [
+            "spongeapi@7.1.0"
+        ]
+    }
+]

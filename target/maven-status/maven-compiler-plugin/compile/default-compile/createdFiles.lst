@@ -1,0 +1,6 @@
+ru/fratask/mc/plugin/pm/Service/IPmService.class
+ru/fratask/mc/plugin/pm/Service/PmService.class
+ru/fratask/mc/plugin/pm/ChatManagerPlugin.class
+mcmod.info
+ru/fratask/mc/plugin/pm/executors/ReplyCommandExecutor.class
+ru/fratask/mc/plugin/pm/executors/PmCommandExecutor.class
